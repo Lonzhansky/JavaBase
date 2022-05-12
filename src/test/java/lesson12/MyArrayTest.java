@@ -1,3 +1,5 @@
+package lesson12;
+
 import com.hillel.lonzhansky.lessons.lesson12.MyArray;
 import org.junit.*;
 
