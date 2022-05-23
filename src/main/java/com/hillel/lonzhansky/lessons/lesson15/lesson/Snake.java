@@ -1,9 +1,12 @@
 package com.hillel.lonzhansky.lessons.lesson15.lesson;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Snake {
 
-    public int length = 4;
-    public int direction = 1;
+    public int length = 2;
+    public int direction = 0;
 
     public int[] snakeX = new int[300];
     public int[] snakeY = new int[300];
@@ -49,5 +52,17 @@ public class Snake {
             snakeX[0] = SnakeMain.WIDTH - 1;
         }
 
+    }
+
+
+    @Override
+    public String toString() {
+        int length = 10;
+        return "Snake{" +
+                "length=" + this.length +
+                ", direction=" + direction +
+                ", snakeX=" + Arrays.toString(snakeX) +
+                ", snakeY=" + Arrays.toString(snakeY) +
+                '}';
     }
 }
