@@ -14,16 +14,16 @@ public class MyArrayTest {
 
     MyArray myArray = new MyArray();
     int[][] array = new int[][] {{1, 2, 3}, {2, 3, 4}, {1, 4 ,5}};
-    static FileInputStream fileInputStream;
+//    static FileInputStream fileInputStream;
 
-    @BeforeAll
-    public void setUpAll() {
-        try {
-            fileInputStream = new FileInputStream("dd.txt");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+//    @BeforeAll
+//    public void setUpAll() {
+//        try {
+//            fileInputStream = new FileInputStream("dd.txt");
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @BeforeEach
     public void setUp() {
@@ -46,13 +46,13 @@ public class MyArrayTest {
         assertTrue(myArray.isSquare(null));
     }
 
-    @AfterAll
-    public static void close() {
-        try {
-            fileInputStream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    @AfterAll
+//    public static void close() {
+//        try {
+//            fileInputStream.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 }
